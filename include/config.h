@@ -6,7 +6,7 @@
 //  AP Name, password
 #define AP_NAME "Fume extractor"            // access point name
 #define PAGE_TITLE "Fume extractor"         // page title
-#define AP_PASS "AP_PASSWORD"               // access point password
+#define AP_PASS "ap_password"               // access point password
 #define ADMIN_PAGE_USERNAME "user";         // http://[local ip]/_ac/update - username
 #define ADMIN_PAGE_PASSWORD "pass";         // http://[local ip]/_ac/update - password
 #define ENABLE_PASSWORD_PROTECTED_WEBSITE 0 // 1 enables password protected admin pages (only update, AP, etc), but not toggle
