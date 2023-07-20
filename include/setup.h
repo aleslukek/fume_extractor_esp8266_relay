@@ -5,23 +5,22 @@
 #include <ESP8266WebServer.h>
 #include <ESP8266WiFi.h>
 #include <config.h>
+//#include <passwords.h> // this redefines passwords in config with #undef and #define
 #include <AutoConnect.h>
 #include <NTPClient.h>
 
-//#define FIRMWARE_VERSION 1.02
-
 #define soldering_station_alive_pin 14 // Gray cable
-#define soldering_iron_pin 12 // White cable
-#define relay_pin 5 // relay pin
-#define station_status_led 2  // soldering station status
-#define iron_status_led 16    // soldering iron status
+#define soldering_iron_pin 12          // White cable
+#define relay_pin 5                    // relay pin
+#define station_status_led 2           // soldering station status
+#define iron_status_led 16             // soldering iron status
 
 #define SS_LED_NORMALY_HIGH LOW
 #define SS_LED_NORMALY_LOW HIGH
 #define IRON_LED_NORMALY_HIGH LOW
 #define IRON_LED_NORMALY_LOW HIGH
 
-    WiFiUDP ntpUDP;
+WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "europe.pool.ntp.org", 3600, 60000);
 
 int relay_turn_off_relay_delay_ms = relay_turn_off_relay_delay_ms_def;
