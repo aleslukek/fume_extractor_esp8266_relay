@@ -2,8 +2,6 @@
 #define CONFIG_H
 
 #include <setup.h>
-// http://192.168.8.136/
-//  AP Name, password
 #define AP_NAME "Fume extractor"            // access point name
 #define PAGE_TITLE "Fume extractor"         // page title
 #define AP_PASS "ap_password"               // access point password
